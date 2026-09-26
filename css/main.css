@@ -1,0 +1,33 @@
+
+@import url("https://fonts.googleapis.com/css?family=Nosifer");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Nunito:wght@200;400;600;700&display=swap');*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: Nunito, sans-serif;
+  background-color: #e8e8e8;
+  color: #222;
+  width: 100%;
+  min-height: 100%;
+  font-size: 18px;
+  line-height: 1.4;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 720px){
+  html{
+    scroll-padding-top: 90px;
+  }
+
+}
