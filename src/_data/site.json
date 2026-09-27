@@ -1,0 +1,16 @@
+{
+  "title": "Tymofii Kuzmych - portfolio",
+  "description": "Portfolio of Tymofii Kuzmych",
+  "imageCdn": "https://ik.imagekit.io/fvq5ttpuv/kuzmych-tymofii",
+  "firstName": "Tymofii",
+  "lastName": "Kuzmych",
+  "photo": "me.jpg",
+  "photoAlt": "photo Tymofii Kuzmych",
+  "bio": "Hello,<br />My name is Tymofii but you can call me Tim. I am 17 and I am from Ukraine. Since very early childhood I have been interested in different stuff (craft, art, sculpture, architecture, design etc.) but always wanted to make a difference, to influence the world in a new way. I am working hard to reach my goals. Please see below a portfolio of my works (some of them). I hope you will enjoy.",
+  "email": "timofiiforwork@gmail.com",
+  "location": "Ukraine",
+  "credit": {
+    "action":  "Website design & development by Iryna Lypnyk",
+    "link": "https://irynalypnyk.com",
+    "year": "2023"}
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "id": "about",
+    "label": "About",
+    "ghost": "A",
+    "num": "01",
+    "theme": "about",
+    "type": "about"
+  },
+  {
+    "id": "paintings",
+    "label": "Paintings",
+    "ghost": "P",
+    "num": "02",
+    "theme": "paintings",
+    "type": "gallery",
+    "images": [
+      { "src": "paintings/1.jpg", "alt": "paintings-1" },
+      { "src": "paintings/2.jpg", "alt": "paintings-2" },
+      { "src": "paintings/3.jpg", "alt": "paintings-3" },
+      { "src": "paintings/11.jpg", "alt": "paintings-11" },
+      { "src": "paintings/4.jpg", "alt": "paintings-4" },
+      { "src": "paintings/6.jpg", "alt": "paintings-6" },
+      { "src": "paintings/15.jpg", "alt": "paintings-15" },
+      { "src": "paintings/5.jpg", "alt": "paintings-5" },
+      { "src": "paintings/7.jpg", "alt": "paintings-7" },
+      { "src": "paintings/8.jpg", "alt": "paintings-8" },
+      { "src": "paintings/9.jpg", "alt": "paintings-9" },
+      { "src": "paintings/10.jpg", "alt": "paintings-10" },
+      { "src": "paintings/14.jpg", "alt": "paintings-14" }
+    ]
+  },
+  {
+    "id": "sketches",
+    "label": "Sketches",
+    "ghost": "S",
+    "num": "03",
+    "theme": "sketches",
+    "type": "gallery",
+    "images": [
+      { "src": "sketching/26.jpeg", "alt": "sketching-26" },
+      { "src": "sketching/1.jpg", "alt": "sketching-1" },
+      { "src": "sketching/2.jpg", "alt": "sketching-2" },
+      { "src": "sketching/6.jpg", "alt": "sketching-6" },
+      { "src": "sketching/24.jpg", "alt": "sketching-24" },
+      { "src": "sketching/25.jpg", "alt": "sketching-25" },
+      { "src": "sketching/17.jpg", "alt": "sketching-17" },
+      { "src": "sketching/18.jpg", "alt": "sketching-18" },
+      { "src": "sketching/19.jpg", "alt": "sketching-19" },
+      { "src": "sketching/22.jpg", "alt": "sketching-22" },
+      { "src": "sketching/27.jpeg", "alt": "sketching-27" },
+      { "src": "sketching/3.jpg", "alt": "sketching-3" },
+      { "src": "sketching/4.jpg", "alt": "sketching-4" },
+      { "src": "sketching/5.jpg", "alt": "sketching-5" },
+      { "src": "sketching/7.jpg", "alt": "sketching-7" },
+      { "src": "sketching/16.jpg", "alt": "sketching-16" },
+      { "src": "sketching/20.jpg", "alt": "sketching-20" },
+      { "src": "sketching/21.jpg", "alt": "sketching-21" },
+      { "src": "sketching/23.jpg", "alt": "sketching-23" }
+    ]
+  },
+  {
+    "id": "sculptures",
+    "label": "Sculptures",
+    "ghost": "S",
+    "num": "04",
+    "theme": "sculptures",
+    "type": "gallery",
+    "images": [
+      { "src": "sculptures/1.jpg", "alt": "sculptures-1" },
+      {
+        "src": "sculptures/11.jpg",
+        "alt": "sculptures-11",
+        "title": "serafim"
+      },
+      { "src": "sculptures/7.jpg", "alt": "sculptures-7" },
+      { "src": "sculptures/8.jpg", "alt": "sculptures-8" },
+      { "src": "sculptures/2.jpg", "alt": "sculptures-2" },
+      { "src": "sculptures/9.jpg", "alt": "sculptures-9" },
+      { "src": "sculptures/6.jpg", "alt": "sculptures-6" }
+    ]
+  },
+  {
+    "id": "ceramics",
+    "label": "Ceramics",
+    "ghost": "C",
+    "num": "05",
+    "theme": "ceramics",
+    "type": "gallery",
+    "images": [
+      { "src": "sculptures/3.jpg", "alt": "sculptures-3" },
+      { "src": "sculptures/4.jpg", "alt": "sculptures-4" },
+      { "src": "sculptures/5.jpg", "alt": "sculptures-5" },
+      { "src": "sculptures/10.jpg", "alt": "sculptures-10" }
+    ]
+  },
+  {
+    "id": "contacts",
+    "label": "Contact",
+    "ghost": "C",
+    "num": "06",
+    "theme": "contact",
+    "type": "contact"
+  }
+]

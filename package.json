@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-kuzmych-tymofii-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run css:watch & eleventy --serve",
+    "css": "postcss src/css/main.css -o _site/css/main.css",
+    "css:watch": "postcss src/css/main.css -o _site/css/main.css --watch",
+    "build": "eleventy && npm run css",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "flickr-justified-gallery": "^2.2.0",
+    "photoswipe": "^5.4.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@eslint/js": "^10.0.1",
+    "cssnano": "^7.1.9",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "postcss": "^8.5.28",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.2.0",
+    "prettier": "^3.9.9"
+  }
+}

@@ -1,0 +1,29 @@
+<section class="panel panel-gallery" id="{{ section.id }}" data-theme="{{ section.theme }}" data-index="{{ index }}">
+  <div class="gallery-head content">
+    <p class="gallery-num">{{ section.num }}</p>
+    <h2 class="gallery-title">{{ section.label }}</h2>
+  </div>
+  <div class="gallery-grid fj-gallery content">
+    {% set lightboxWidth = image.width if image.width < 2000 else 2000 %}
+    {% for image in section.images %}
+      <a class="gallery-item fj-gallery-item" href="{{ image.src | cdnImageMax(2000, image.width)}}" aria-label="{{ image.alt }}"{% if image.title %} title="{{ image.title }}"{% endif %}>
+        <img
+          src="{{ image.src | cdnImage(400) }}"
+          srcset="
+            {{ image.src | cdnImage(400) }} 400w,
+            {{ image.src | cdnImage(600) }} 600w,
+            {{ image.src | cdnImage(800) }} 800w
+          "
+          sizes="(max-width: 600px) 100vw, 33vw"
+          alt="{{ image.alt }}"
+          width="{{ image.width }}"
+          height="{{ image.height }}"
+          loading="{% if loop.first %}eager{% else %}lazy{% endif %}"
+          {% if loop.first %}fetchpriority="high"{% endif %}
+          decoding="async"
+        >
+      </a>
+    {% endfor %}
+  </div>
+  {% include "footer.njk" %}
+</section>

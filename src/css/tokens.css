@@ -1,0 +1,83 @@
+:root {
+  --font-name: "Big Shoulders Display", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-display: "Nunito", sans-serif;
+
+  --color-text: #3a3630;
+
+  --color-ivory-bg: #edeae4;
+  --color-ivory-fg: #1a1a1a;
+  --color-ivory-muted: rgba(26, 26, 26, 0.4);
+  --color-ivory-ghost: rgba(26, 26, 26, 0.06);
+
+  --color-greenish-bg: #1c1c1c;
+  --color-greenish-fg: #e8e4df;
+  --color-greenish-muted: rgba(232, 228, 223, 0.4);
+  --color-greenish-ghost: rgba(232, 228, 223, 0.06);
+
+  --color-beige-bg: #c2bdb6;
+  --color-beige-fg: #1a1a1a;
+  --color-beige-muted: rgba(26, 26, 26, 0.38);
+  --color-beige-ghost: rgba(26, 26, 26, 0.06);
+
+  --color-brownish-bg: #8a9e8c;
+  --color-brownish-fg: #1a1a1a;
+  --color-brownish-muted: rgba(26, 26, 26, 0.38);
+  --color-brownish-ghost: rgba(26, 26, 26, 0.06);
+
+  --color-bluish-bg: #c97b3a;
+  --color-bluish-fg: #fdf6ee;
+  --color-bluish-muted: rgba(253, 246, 238, 0.55);
+  --color-bluish-ghost: rgba(253, 246, 238, 0.09);
+
+  --color-greyish-bg: #a8978a;
+  --color-greyish-fg: #1a1a1a;
+  --color-greyish-muted: rgba(26, 26, 26, 0.38);
+  --color-greyish-ghost: rgba(26, 26, 26, 0.06);
+
+  --nav-height: clamp(72px, 9vw, 104px);
+  --mobile-nav-height: 56px;
+  --content-max-width: 1400px;
+}
+
+[data-theme="about"] {
+  --section-bg: var(--color-ivory-bg);
+  --section-fg: var(--color-ivory-fg);
+  --section-muted: var(--color-ivory-muted);
+  --section-ghost: var(--color-ivory-ghost);
+}
+
+[data-theme="paintings"], [data-discipline="Paintings"] {
+  --section-bg: var(--color-beige-bg);
+  --section-fg: var(--color-beige-fg);
+  --section-muted: var(--color-beige-muted);
+  --section-ghost: var(--color-beige-ghost);
+}
+
+[data-theme="sketches"], [data-discipline="Sketches"] {
+  --section-bg: var(--color-bluish-bg);
+  --section-fg: var(--color-bluish-fg);
+  --section-muted: var(--color-bluish-muted);
+  --section-ghost: var(--color-bluish-ghost);
+}
+
+[data-theme="sculptures"], [data-discipline="Sculptures"] {
+  --section-bg: var(--color-brownish-bg);
+  --section-fg: var(--color-brownish-fg);
+  --section-muted: var(--color-brownish-muted);
+  --section-ghost: var(--color-brownish-ghost);
+}
+
+[data-theme="ceramics"], [data-discipline="Ceramics"] {
+  --section-bg: var(--color-greyish-bg);
+  --section-fg: var(--color-greyish-fg);
+  --section-muted: var(--color-greyish-muted);
+  --section-ghost: var(--color-greyish-ghost);
+}
+
+[data-theme="contact"] {
+  --section-bg: var(--color-greenish-bg);
+  --section-fg: var(--color-greenish-fg);
+  --section-muted: var(--color-greenish-muted);
+  --section-ghost: var(--color-greenish-ghost);
+}

@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+---
+{% for section in sections %}
+  {% set index = loop.index0 %}
+  {% if section.type == "about" %}
+    {% include "section-about.njk" %}
+  {% elif section.type == "gallery" %}
+    {% include "section-gallery.njk" %}
+  {% elif section.type == "contact" %}
+    {% include "section-contact.njk" %}
+  {% endif %}
+{% endfor %}

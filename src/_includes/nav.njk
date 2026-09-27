@@ -1,0 +1,26 @@
+<nav class="nav-desktop" aria-label="Sections">
+  {% for section in sections %}
+  <button
+    type="button"
+    class="nav-item{% if loop.first %} is-active{% endif %}"
+    data-theme="{{ section.theme }}"
+    data-index="{{ loop.index0 }}"
+    data-target="{{ section.id }}"
+  >
+    <span class="nav-item-face">
+      <span class="nav-ghost" aria-hidden="true">{{ section.ghost }}</span>
+      <span class="nav-num">{{ section.num }}</span>
+      <span class="nav-label">{{ section.label }}</span>
+    </span>
+  </button>
+  {% endfor %}
+</nav>
+
+<header class="nav-mobile" data-theme="about">
+  <span class="nav-mobile-status" id="mobileStatus">01 — ABOUT</span>
+  <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>

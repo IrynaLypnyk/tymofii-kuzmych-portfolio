@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overscroll-behavior: none;
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  background: var(--color-ivory-bg);
+  color: var(--color-ivory-fg);
+}
+
+button {
+  font-family: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main {
+  container-type: inline-size;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.track {
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  transform: translate3d(calc(var(--section, 0) * -100cqi), 0, 0);
+  transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.track.is-instant {
+  transition: none;
+}
+
+.panel {
+  flex: 0 0 100cqi;
+  width: 100cqi;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--section-bg);
+  color: var(--section-fg);
+  touch-action: pan-y;
+}
+
+.content {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    transition: none;
+  }
+}
+
+.credit {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--section-muted, var(--color-ivory-muted));
+  opacity: 0.8;
+}
+
+.credit a {
+  color: var(--section-muted, var(--color-ivory-muted));
+  text-decoration: none;
+}
+
+
+.footer {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: flex-end;
+  gap: 12px;
+}

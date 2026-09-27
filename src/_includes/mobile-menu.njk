@@ -1,0 +1,28 @@
+<div class="mobile-overlay" id="mobileOverlay" hidden>
+  <div class="mobile-overlay-bar" data-theme="about">
+    <span class="nav-mobile-status">MENU</span>
+    <button type="button" class="menu-toggle is-open" id="menuClose" aria-label="Close menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <ul class="mobile-menu">
+    {% for section in sections %}
+    <li>
+      <button
+        type="button"
+        class="mobile-menu-item{% if loop.first %} is-active{% endif %}"
+        data-index="{{ loop.index0 }}"
+        data-target="{{ section.id }}"
+      >
+        <span class="nav-num">{{ section.num }}</span>
+        <span class="nav-ghost">{{ section.ghost }}</span>
+        <span class="theme-dot" data-theme="{{ section.theme }}"></span>
+        <span class="nav-label">{{ section.label }}</span>
+        <span class="now-label">— NOW</span>
+      </button>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

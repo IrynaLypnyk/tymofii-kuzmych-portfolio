@@ -1,0 +1,48 @@
+<section class="panel panel-about brick-bg" id="{{ section.id }}" data-theme="{{ section.theme }}" data-index="{{ index }}">
+  <div class="about-inner content">
+    <div class="about-grid">
+      <div class="photo-frame">
+        <img
+          src="{{ site.photo | cdnImage(400) }}"
+          srcset="
+            {{ site.photo | cdnImage(400) }} 400w,
+            {{ site.photo | cdnImage(800) }} 800w,
+            {{ site.photo | cdnImage(1200) }} 1200w
+          "
+          sizes="(max-width: 400px) 100vw, 400px"
+          width="400"
+          height="533"
+          alt="{{ site.photoAlt }}"
+          loading="eager"
+          decoding="async"
+        >
+      </div>
+      <div class="about-copy">
+        <p class="portfolio-badge">
+          <span class="portfolio-badge-line" aria-hidden="true"></span>
+          Creative Portfolio
+        </p>
+        <div class="name-block">
+          <h1 class="name-display">
+            <span class="name-first">{{ site.firstName }}</span>
+            <span class="name-last">{{ site.lastName }}</span>
+          </h1>
+          <ul class="disciplines">
+            {% for item in sections %}
+              {% if item.type == "gallery" %}
+                <li data-discipline="{{ item.label}}">{{ item.label }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="about-bio">
+          <p class="bio-text">{{ site.bio | safe }}</p>
+          <button type="button" class="view-works" data-target="paintings">
+            VIEW WORKS <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "footer.njk" %}
+</section>

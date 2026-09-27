@@ -1,0 +1,14 @@
+<section class="panel panel-contact" id="{{ section.id }}" data-theme="{{ section.theme }}" data-index="{{ index }}">
+  <div class="contact-inner content">
+    <p class="gallery-num">{{ section.num }}</p>
+    <h2 class="contact-title">{{ section.label }}</h2>
+    <div class="rule"></div>
+    <dl class="contact-list">
+      <div class="contact-row">
+        <dt>EMAIL</dt>
+        <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+      </div>
+    </dl>
+  </div>
+  {% include "footer.njk" %}
+</section>
