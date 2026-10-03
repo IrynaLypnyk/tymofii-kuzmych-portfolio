@@ -74,6 +74,7 @@ img {
 }
 
 .content {
+  width: 100%;
   max-width: var(--content-max-width);
   margin: 0 auto;
 }
@@ -85,21 +86,27 @@ img {
 }
 
 .credit {
+  min-width: 0;
   font-size: 12px;
   letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-align: right;
+  overflow-wrap: anywhere;
   color: var(--section-muted, var(--color-ivory-muted));
   opacity: 0.8;
+  text-align: right;
 }
 
 .credit a {
   color: var(--section-muted, var(--color-ivory-muted));
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
 .footer {
   display: flex;
-  padding: 16px 24px;
+  min-width: 0;
+  padding: 16px clamp(16px, 5vw, 24px);
   justify-content: flex-end;
   gap: 12px;
 }

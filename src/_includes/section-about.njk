@@ -27,14 +27,14 @@
             <span class="name-first">{{ site.firstName }}</span>
             <span class="name-last">{{ site.lastName }}</span>
           </h1>
-          <ul class="disciplines">
-            {% for item in sections %}
-              {% if item.type == "gallery" %}
-                <li data-discipline="{{ item.label}}">{{ item.label }}</li>
-              {% endif %}
-            {% endfor %}
-          </ul>
         </div>
+        <ul class="disciplines">
+          {% for item in sections %}
+          {% if item.type == "gallery" %}
+          <li data-discipline="{{ item.label}}">{{ item.label }}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
         <div class="about-bio">
           <p class="bio-text">{{ site.bio | safe }}</p>
           <button type="button" class="view-works" data-target="paintings">

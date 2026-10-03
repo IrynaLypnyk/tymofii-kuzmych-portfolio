@@ -34,6 +34,7 @@
   display: flex;
   gap: 32px;
   align-items: baseline;
+  min-width: 0;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid color-mix(in srgb, var(--section-fg) 8%, transparent);
@@ -48,6 +49,7 @@
 }
 
 .contact-row dd {
+  min-width: 0;
   margin: 0;
   font-size: 16px;
   font-weight: 200;
@@ -56,6 +58,7 @@
 .contact-row a {
   color: inherit;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .contact-row a:hover {
@@ -80,5 +83,24 @@
 
   .panel-contact.is-active .contact-row {
     animation-delay: 340ms;
+  }
+}
+
+@media (max-width: 359px) {
+  .contact-inner {
+    padding-inline: 16px;
+  }
+
+  .contact-title {
+    font-size: 42px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .contact-row dt {
+    width: auto;
   }
 }

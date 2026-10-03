@@ -10,7 +10,8 @@
   "email": "timofiiforwork@gmail.com",
   "location": "Ukraine",
   "credit": {
-    "action":  "Website design & development by Iryna Lypnyk",
+    "action":  "Website design & development by",
+    "name": "Iryna Lypnyk",
     "link": "https://irynalypnyk.com",
     "year": "2023"}
 }

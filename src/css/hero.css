@@ -48,6 +48,7 @@
 }
 
 .about-copy {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -75,6 +76,7 @@
 }
 
 .name-display {
+  max-width: 100%;
   margin: 0;
   font-family: var(--font-name), sans-serif;
   font-weight: 900;
@@ -99,17 +101,18 @@
 .disciplines {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 16px;
-  row-gap: 4px;
-  margin-top: 20px;
+  column-gap: 8px;
+  row-gap: 8px;
+  margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 190px;
 }
 
 .disciplines li {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   font-family: var(--font-body), sans-serif;
   font-size: 11px;
   font-weight: 400;
@@ -136,6 +139,7 @@
   line-height: 1.75;
   color: var(--color-text);
   max-width: 60ch;
+  overflow-wrap: anywhere;
 }
 
 .about-bio {
@@ -158,6 +162,30 @@
 
 .view-works span {
   opacity: 0.4;
+}
+
+@media (min-width: 360px) {
+  .disciplines {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 359px) {
+  .about-inner {
+    padding-inline: 16px;
+  }
+
+  .about-copy {
+    gap: 24px;
+  }
+
+  .portfolio-badge {
+    letter-spacing: 0.18em;
+  }
+
+  .name-display {
+    font-size: 64px;
+  }
 }
 
 @media (min-width: 768px) {
