@@ -18,7 +18,7 @@ The project was built as a lightweight static site with a focus on visual conten
 
 ## Live Demo
 
-🔗 Live demo — coming soon  
+🔗 [Live demo](https://tymofii-kuzmych-portfolio.netlify.app/)
 📁 Source code — this repository
 
 ## Technologies
